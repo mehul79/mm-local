@@ -1,0 +1,91 @@
+# Core ML/DL libraries (CUDA 11.3 compatible)
+torch==1.11.0+cu113
+torchvision==0.12.0+cu113
+torchaudio==0.11.0+cu113
+torchtext==0.12.0
+pytorch-lightning==1.4.2
+torchmetrics==0.6.0
+torch-fidelity==0.3.0
+torchelastic==0.2.2
+
+# OpenMMLab ecosystem
+mmcv==2.0.1
+mmengine==0.10.7
+mmsegmentation==1.2.2
+openmim==0.3.9
+cityscapesscripts
+model-index==0.1.11
+mmdet==3.1.0
+
+# Diffusion / generative models & dependencies
+diffusers
+einops==0.3.0
+imageio==2.9.0
+imageio-ffmpeg==0.4.2
+invisible-watermark
+kornia==0.6
+timm
+transformers==4.19.2
+
+# Stable diffusion & related repos (editable installs)
+-e git+https://github.com/CompVis/stable-diffusion@21f890f#egg=latent-diffusion
+-e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers
+
+# Utilities & common scientific libraries
+numpy==1.21.2
+pandas==2.0.3
+scipy
+matplotlib
+packaging==24.2
+prettytable==3.11.0
+regex
+ftfy
+pydeck==0.9.1
+pyarrow==17.0.0
+
+# Imaging and CV
+opencv-python==4.11.0.86
+albumentations>=0.3.2 --no-binary qudida,albumentations
+Pillow==9.0.1
+nibabel==5.2.1
+
+# Documentation and parsing
+docutils==0.16.0
+myst-parser
+sphinx==4.0.2
+sphinx_copybutton
+sphinx_markdown_tables
+-e git+https://github.com/open-mmlab/pytorch_sphinx_theme.git#egg=pytorch_sphinx_theme
+
+# Testing & linting
+pytest==8.3.5
+flake8
+pycodestyle==2.12.1
+pyflakes==3.2.0
+xdoctest>=0.10.0
+codecov
+
+# Git editable installs
+-e git+https://github.com/openai/CLIP.git@main#egg=clip
+
+# Misc libraries
+oauthlib==3.2.2
+protobuf==5.29.4
+psutil==5.8.0
+pyOpenSSL==21.0.0
+pyparsing==3.1.4
+pycryptodome==3.23.0
+python-dateutil==2.9.0.post0
+pluggy==1.5.0
+prompt-toolkit==3.0.20
+ptyprocess==0.7.0
+pudb==2019.2
+parso==0.8.3
+pyasn1==0.6.1
+pyasn1_modules==0.4.2
+pyquaternion==0.9.9
+packaging==24.2
+ordered-set==4.1.0
+test-tube>=0.7.5
+interrogate
+yapf
