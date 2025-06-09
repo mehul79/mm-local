@@ -1,6 +1,7 @@
 # lars.py
 
 import os.path as osp
+import os
 from mmseg.datasets.builder import DATASETS
 from mmseg.datasets.custom import CustomDataset
 from mmseg.utils import print_log
@@ -20,7 +21,7 @@ class LaRSDataset(CustomDataset):
 
     CLASSES = ('water', 'sky', 'obstacle')
     PALETTE = [
-        (  0,   0, 128),  # water: dark blue
+        (  0,   0, 128),  # water: dark blue 
         (128, 128, 128),  # sky: light gray
         (128,   0,   0),  # obstacle: maroon
     ]
