@@ -190,11 +190,11 @@ if __name__ == '__main__':
         license='Apache License 2.0',
         install_requires=parse_requirements('requirements/runtime.txt'),
         extras_require={
-             'all': parse_requirements('requirements.txt', with_version=True),
-             'tests': parse_requirements('requirements/tests.txt', with_version=True),
-             'optional': parse_requirements('requirements/optional.txt', with_version=True),
-             'mim': parse_requirements('requirements/mminstall.txt', with_version=True),
-             'multimodal': parse_requirements('requirements/multimodal.txt', with_version=True),
+            'all': parse_requirements('requirements.txt'),
+            'tests': parse_requirements('requirements/tests.txt'),
+            'optional': parse_requirements('requirements/optional.txt'),
+            'mim': parse_requirements('requirements/mminstall.txt'),
+            'multimodal': parse_requirements('requirements/multimodal.txt'),
         },
         ext_modules=[],
         zip_safe=False)
