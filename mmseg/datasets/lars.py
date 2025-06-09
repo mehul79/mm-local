@@ -2,7 +2,6 @@ import os
 import os.path as osp
 from mmseg.registry import DATASETS
 from mmseg.datasets.basesegdataset import BaseSegDataset
-from mmseg.utils import get_root_logger
 
 @DATASETS.register_module()
 class LaRSDataset(BaseSegDataset):
@@ -40,7 +39,6 @@ class LaRSDataset(BaseSegDataset):
             split=split,
             **kwargs)
 
-        get_root_logger().info(f'Loaded LaRS dataset: {len(self)} images')
 
     def load_data_list(self):
         """Load image & annotation file paths."""
