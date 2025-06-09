@@ -6,5 +6,5 @@
 # print(ms_deform_attn)
 
 
-from mmseg.datasets.builder import DATASETS
+from mmseg.registry import DATASETS
 print('Is LaRSDataset registered?', 'LaRSDataset' in DATASETS.module_dict)
